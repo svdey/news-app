@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;1,300;1,600&display=swap');
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -17,6 +18,7 @@
 }
 
 body {
+    font-family: 'Poppins', sans-serif;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -25,3 +27,37 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+/* CustomScrollbar.css */
+
+/* Track */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 9px; /* Width of the scrollbar */
+}
+
+/* Thumb */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #666666; /* Color of the scrollbar thumb */
+  border-radius: 3px;
+}
+
+/* Thumb on hover */
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #474646; /* Color on hover */
+  border-radius: 3px;
+}
+
+/* Track on hover */
+.custom-scrollbar::-webkit-scrollbar-track:hover {
+  background: #d1d0d0; /* Track background on hover */
+  border-radius: 3px;
+
+}
+
+/* Track */
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #d1d0d0; /* Track background */
+  border-radius: 3px;
+
+}
+
